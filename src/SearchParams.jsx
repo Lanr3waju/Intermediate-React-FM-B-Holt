@@ -20,18 +20,20 @@ const SearchParams = () => {
     const pets = results?.data?.pets ?? [];
 
     return (
-        <div className="search-params">
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                // new ForData is a browser APi that fetches the data from a from into an object
-                const formData = new FormData(e.target);
-                const obj = {
-                    animal: formData.get("animal") ?? "",
-                    breed: formData.get("breed") ?? "",
-                    location: formData.get("location") ?? "",
-                };
-                setRequestParams(obj)
-            }}>
+        <div className="my-0 mx-auto w-11/12">
+            <form
+                className="p-10 mb-10 rounded-lg bg-gray-200 shadow-lg flex flex-col items-center justify-center"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    // new ForData is a browser APi that fetches the data from a from into an object
+                    const formData = new FormData(e.target);
+                    const obj = {
+                        animal: formData.get("animal") ?? "",
+                        breed: formData.get("breed") ?? "",
+                        location: formData.get("location") ?? "",
+                    };
+                    setRequestParams(obj)
+                }}>
                 {
                     adoptedPet && (
                         <div className="pet image-container">
