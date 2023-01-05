@@ -45,7 +45,7 @@ const SearchParams = () => {
                     Location
                     <input id="location"
                         type="text"
-                        className="w-60 block mb-5"
+                        className="search-input"
                         name="location"
                         placeholder="location" />
 
@@ -55,7 +55,7 @@ const SearchParams = () => {
                     <select
                         id="animal"
                         name="animal"
-                        className="w-60 block mb-5"
+                        className="search-input"
                         value={animal}
                         onChange={(e) => {
                             setAnimal(e.target.value);
@@ -74,7 +74,7 @@ const SearchParams = () => {
                     <select
                         disabled={!breeds.length}
                         id="breed"
-                        className="w-60 block mb-5 disabled:opacity-40"
+                        className="search-input grayed-out-disabled"
                         name="breed"
                     >
                         <option />
