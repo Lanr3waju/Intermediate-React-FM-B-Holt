@@ -1,20 +1,28 @@
-# Full Intro to React V8 Course by Frontend Masters and Brian Holt
+# This is my works on the Intermediate React Course V5 on Frontend Masters by Brian Holt
 
-## This is a code along pet adoption app that teaches the fundamentals of react by instructor Brian Holt
+## This is a builds on the pet adoption app built in the intro to react version of this course
 
 ## It covers such concepts as
 
 - Hooks
-- React Query
-- Error Boundary
-- Controlled Components
-- JSX
-- React Router
+  - useRef
+  - useReducer
+  - useMemo
+  - useCallback
+  - useLayoutEffect & useID
+- Tailwindcss
+- Advanced React Performance
+  - Code splitting
+  - Server side rendering
+  - Node streams with express
+  - Server-side fetching
+- Low priority re-rendering
+- Typescript
+- Redux
+- Testing
 etc.
 
 ### It also talks about using vite to bundle your app and how to setup vite
-
-### Also using EsLint with React, among many others
 
 [Live demo](https://react-intro-v8-b-holt.netlify.app/)
 
